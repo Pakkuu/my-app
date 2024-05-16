@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from "react-icons/rx";
-import { prefix } from "../../prefix";
 
 interface ProjectProps {
   title: string;
@@ -43,7 +42,7 @@ export default function Project({ title, images, skills, desc }: ProjectProps) {
           >
             <Image
               className="shadow-[#00000039] shadow-sm rounded-[1vw] object-cover w-full h-full"
-              src={`${prefix}${image}`}
+              src={image}
               alt=""
               fill
             />

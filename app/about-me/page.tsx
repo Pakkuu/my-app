@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { prefix } from "../../prefix"
 
 export default function AboutMe() {
   return (
@@ -17,7 +16,7 @@ export default function AboutMe() {
         <div className="mt-[4vh] mx-auto w-[17vw] h-[17vw] relative">
           <Image
             className="shadow-[#00000039] shadow-sm border-[0.07vw] border-secondary rounded-[0.6vw] opacity-90"
-            src={`${prefix}/me.jpg`}
+            src="/me.jpg"
             alt="me.jpg"
             fill
             sizes="17vw"
