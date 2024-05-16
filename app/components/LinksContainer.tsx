@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { prefix } from '../../prefix';
 
 export default function LinksContainer() {
   return (
@@ -14,7 +15,7 @@ export default function LinksContainer() {
         >
           <Image
             className="opacity-30 hover:opacity-50 transition-all duration-200 hover:scale-105"
-            src="/github.png"
+            src={`${prefix}/github.png`}
             alt="GitHub"
             fill
             sizes="2vw"
@@ -28,7 +29,7 @@ export default function LinksContainer() {
         >
           <Image
             className="opacity-30 hover:opacity-50 transition-all duration-200 hover:scale-105"
-            src="/linkedin.png"
+            src={`${prefix}/linkedin.png`}
             alt="LinkedIn"
             fill
             sizes="2vw"
@@ -42,7 +43,7 @@ export default function LinksContainer() {
         >
           <Image
             className="opacity-30 hover:opacity-50 transition-all duration-200 hover:scale-105"
-            src="/instagram.png"
+            src={`${prefix}/instagram.png`}
             alt="Instagram"
             fill
             sizes="2vw"

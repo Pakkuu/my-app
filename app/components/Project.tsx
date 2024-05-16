@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from "react-icons/rx";
+import { prefix } from "../../prefix";
 
 interface ProjectProps {
   title: string;
@@ -42,7 +43,7 @@ export default function Project({ title, images, skills, desc }: ProjectProps) {
           >
             <Image
               className="shadow-[#00000039] shadow-sm rounded-[1vw] object-cover w-full h-full"
-              src={image}
+              src={`${prefix}${image}`}
               alt=""
               fill
             />
@@ -64,8 +65,8 @@ export default function Project({ title, images, skills, desc }: ProjectProps) {
           {images.map((image, index) => (
             <RxDotFilled
               key={index}
-              className={`mx-1 text-white ${
-                index === currentIndex ? "text-black/50" : "text-black/10"
+              className={`mx-1 ${
+                index === currentIndex ? "text-black/50" : "text-[#8d8d8d97]"
               } hover:text-white/80 transition-colors duration-300 cursor-pointer`}
               onClick={() => setCurrentIndex(index)}
             />
