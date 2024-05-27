@@ -2,8 +2,8 @@ import Skill from "../components/Skill";
 
 export default function Skills() {
   return (
-    <div className="mt-[1.5vh] mb-[5.4vh] max-w-[70%] mx-auto">
-      <div className="grid grid-cols-6 grid-rows-3 gap-[1.5vh]">
+    <div className="mt-[1.5vh] mb-[5.4vh] max-w-[93%] md:max-w-[70%] mx-auto">
+      <div className="grid grid-cols-4 md:grid-cols-6 md:grid-rows-3 gap-[4vw] md:gap-[1.8vh]">
         <Skill src="/lambda.svg" name="AWS Lambda"/>
         <Skill src="/dynamo.svg" name="AWS DynamoDB"/>
         <Skill src="/s3.svg" name="AWS S3"/>

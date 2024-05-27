@@ -28,11 +28,11 @@ export default function Project({ title, images, skills, desc }: ProjectProps) {
   }
 
   return (
-    <div className="shadow-[#00000039] shadow-sm  border-2 border-secondary rounded-[0.6vw] mx-auto mt-[1.5vh] mb-[1.5vh] max-w-[70%] h-auto bg-primary flex flex-col justify-center items-center">
-      <div className="font-quicksand font-[700] text-[2vw] mt-[1.5vh] mb-[0.7vh] text-[#00000085]">
+    <div className="shadow-[#00000039] shadow-sm  border-2 border-secondary rounded-[1.6vw] md:rounded-[0.6vw] mx-auto mt-[1.5vh] mb-[1.5vh] max-w-[93%] md:max-w-[70%] h-auto bg-primary flex flex-col justify-center items-center px-[3vw]">
+      <div className="font-quicksand font-[700] text-[5.2vw] md:text-[2vw] mt-[1.5vh] mb-[0.7vh] text-[#00000085]">
         {title}
       </div>
-      <div className="w-[45vw] h-[45vh] relative group">
+      <div className="w-[87vw] md:w-[45vw] h-[47vw] md:h-[45vh] relative group">
         {images.map((image, index) => (
           <div
             key={index}
@@ -72,10 +72,10 @@ export default function Project({ title, images, skills, desc }: ProjectProps) {
           ))}
         </div>
       </div>
-      <div className="shadow-[#00000015] shadow-sm font-[700] my-[0.6vw] font-quicksand text-accent bg-[#f4f4f48c] border-[0.04vw] border-[#ffffff43] rounded-[0.6vw] text-[0.75vw] px-[0.5vw] py-[0.4vh]">
+      <div className="shadow-[#00000015] shadow-sm font-[700] mt-[1vh] md:my-[0.6vw] font-quicksand text-accent bg-[#f4f4f48c] border-[0.04vw] border-[#ffffff43] rounded-[1.6vw] md:rounded-[0.6vw] text-[1.9vw] md:text-[0.75vw] px-[0.5vw] py-[0.4vh]">
         {skills}
       </div>
-      <div className="text-accent font-quicksand font-[500] w-[38vw] text-justify mb-[3vh] leading-[3.3vh]">
+      <div className="text-accent font-quicksand font-[500] text-[3vw] md:text-[0.88vw] text-justify mb-[3vh] leading-[3vh] md:leading-[3.3vh] md:mx-[12vw] md:mb-[4vh]">
         {desc}
       </div>
     </div>
