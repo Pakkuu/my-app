@@ -11,7 +11,7 @@ export default function Project() {
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[1.5vh] mb-[0.7vh] text-[#000000d8]">
             Cyphera
           </div>
-          <div className="text-[#000000c8] font-[300] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+          <div className="text-[#000000a6] font-[400] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
             A durable, high performance file storage solution - secured with
             Enterprise Grade AES-256 bit end-to-end encryption. Files are encrypted locally on the client machine before upload, ensuring inflight data protection. EC2 instances are attached to an Elastic Load Balancer, enabling efficient routing of traffic between servers.
           </div>
@@ -25,7 +25,7 @@ export default function Project() {
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[1.5vh] mb-[0.7vh] text-[#000000d8]">
             SAGE
           </div>
-          <div className="text-[#000000c8] font-[300] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+          <div className="text-[#000000a6] font-[400] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
             An AI-powered advising and guidance system designed to help students
             navigate through the difficult academic maze. The two main features
             are a chatbot to answer student&apos;s questions, and also a degree plan
@@ -43,7 +43,7 @@ export default function Project() {
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[2rem] mb-[0.7vh] text-[#000000d8]">
             SlideScribe
           </div>
-          <div className="text-[#000000c8] font-[300] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+          <div className="text-[#000000a6] font-[400] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
             SlideScribe is a web app that aids students in their lecture
             comprehension. The program utilizes Google&apos;s Vision AI as an OCR
             Engine for transcribing text from uploaded images of lecture slides.
