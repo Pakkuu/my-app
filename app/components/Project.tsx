@@ -43,7 +43,7 @@ export default function Project() {
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[2rem] mb-[0.7vh] text-[#000000d8]">
             SlideScribe
           </div>
-          <div className="text-[#000000a6] font-[400] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+          <div className="text-[#000000c8] font-[400] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
             SlideScribe is a web app that aids students in their lecture
             comprehension. The program utilizes Google&apos;s Vision AI as an OCR
             Engine for transcribing text from uploaded images of lecture slides.
