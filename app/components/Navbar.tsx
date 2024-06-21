@@ -8,10 +8,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="shadow-[#00000039] shadow-sm flex items-center border-[0.1vw] border-secondary rounded-[1.6vw] md:rounded-[0.6vw] mx-auto mt-[3vh] md:mt-[10vh] max-w-[93%] md:max-w-[70%] h-[3.5rem] md:h-[5.3vw] bg-primary">
-      <Button text="About Me" active={pathname === '/about-me'} href="/about-me" />
-      <Button text="Skills" active={pathname === '/skills'} href="/skills" />
-      <Button text="Projects" active={pathname === '/projects'} href="/projects" />
+    <div className="flex items-center mx-auto sm:mt-[5rem] mt-[1rem] lg:w-[61%] sm:w-[80%] h-[6rem]">
+      <Button text="ABOUT" active={pathname === '/'} href="/" />
+      <Button text="PROJECTS" active={pathname === '/projects'} href="/projects" />
       <LinksContainer/>
     </div>
   );

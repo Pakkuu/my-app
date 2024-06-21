@@ -1,82 +1,57 @@
-'use client';
-import { useState } from "react";
 import Image from "next/image";
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
-import { RxDotFilled } from "react-icons/rx";
 
-interface ProjectProps {
-  title: string;
-  images: string[];
-  skills: string;
-  desc: string;
-}
-
-export default function Project({ title, images, skills, desc }: ProjectProps) {
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length-1 : currentIndex-1;
-    setCurrentIndex(newIndex);
-  }
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === images.length-1;
-    const newIndex = isLastSlide ? 0 : currentIndex+1;
-    setCurrentIndex(newIndex)
-  }
-
+export default function Project() {
   return (
-    <div className="shadow-[#00000039] shadow-sm  border-2 border-secondary rounded-[1.6vw] md:rounded-[0.6vw] mx-auto mt-[1.5vh] mb-[1.5vh] max-w-[93%] md:max-w-[70%] h-auto bg-primary flex flex-col justify-center items-center px-[3vw]">
-      <div className="font-quicksand font-[700] text-[5.2vw] md:text-[2vw] mt-[1.5vh] mb-[0.7vh] text-[#00000085]">
-        {title}
-      </div>
-      <div className="w-[87vw] md:w-[45vw] h-[47vw] md:h-[45vh] relative group">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <Image
-              className="shadow-[#00000039] shadow-sm rounded-[1vw] object-cover w-full h-full"
-              src={image}
-              alt=""
-              fill
-            />
+    <div>
+      <div className="mx-auto mt-[1.5vh] mb-[5rem] w-min h-auto flex flex-col justify-center items-center">
+        <div className="lg:w-[57rem] lg:h-[30rem] sm:w-[35rem] sm:h-[20rem] w-[20rem] h-[10rem] relative">
+          <Image className="" src="/cyphera.png" alt="sage" fill />
+        </div>
+        <div className="sm:w-[30rem] w-[15rem]">
+          <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[1.5vh] mb-[0.7vh] text-[#000000d8]">
+            Cyphera
           </div>
-        ))}
-        <div onClick={ prevSlide } className="flex items-center justify-center ml-auto absolute left-[0vw] top-[50%] transform translate-y-[-50%] rounded-tl-[1vw] rounded-bl-[1vw] w-[5vw] h-[45vh] cursor-pointer text-black/50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-          <BsChevronCompactLeft  
-            size={40} 
-            className="ml-[-1.8vw]"
-          />
-        </div>
-        <div onClick={ nextSlide } className="flex items-center justify-center absolute right-[0vw] top-[50%] transform translate-y-[-50%] rounded-tr-[1vw] rounded-br-[1vw] w-[5vw] h-[45vh] cursor-pointer text-black/50 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-          <BsChevronCompactRight 
-            size={40} 
-            className="mr-[-1.8vw]"
-          />
-        </div>
-        <div className="absolute bottom-[1vh] flex justify-center w-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-          {images.map((image, index) => (
-            <RxDotFilled
-              key={index}
-              className={`mx-1 ${
-                index === currentIndex ? "text-black/50" : "text-[#8d8d8d97]"
-              } hover:text-white/80 transition-colors duration-300 cursor-pointer`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
+          <div className="text-[#000000c8] font-[300] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+            A durable, high performance file storage solution - secured with
+            Enterprise Grade AES-256 bit end-to-end encryption. Files are encrypted locally on the client machine before upload, ensuring inflight data protection. EC2 instances are attached to an Elastic Load Balancer, enabling efficient routing of traffic between servers.
+          </div>
         </div>
       </div>
-      <div className="shadow-[#00000015] shadow-sm font-[700] mt-[0.8rem] mb-[0.3rem] md:my-[0.6vw] font-quicksand text-accent bg-[#f4f4f48c] border-[0.04vw] border-[#ffffff43] rounded-[1.6vw] md:rounded-[0.6vw] text-[1.9vw] md:text-[0.75vw] px-[0.5vw] py-[0.4vh]">
-        {skills}
+      <div className="mx-auto mt-[1.5vh] mb-[1.5rem] w-min h-auto flex flex-col justify-center items-center px-[3vw]">
+        <div className="lg:w-[44rem] lg:h-[30rem] sm:w-[34rem] sm:h-[23rem] w-[19rem] h-[13rem] relative">
+          <Image className="" src="/sage.png" alt="sage" fill />
+        </div>
+        <div className="sm:w-[30rem] w-[15rem]">
+          <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[1.5vh] mb-[0.7vh] text-[#000000d8]">
+            SAGE
+          </div>
+          <div className="text-[#000000c8] font-[300] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+            An AI-powered advising and guidance system designed to help students
+            navigate through the difficult academic maze. The two main features
+            are a chatbot to answer student&apos;s questions, and also a degree plan
+            generator that provides a student with a complete timeline of their
+            college classes that they have left to complete based on their
+            major.
+          </div>
+        </div>
       </div>
-      <div className="text-accent font-quicksand font-[500] text-[3vw] md:text-[0.88vw] text-justify mb-[1rem] leading-[1.5rem] md:leading-[3.3vh] md:mx-[12vw] md:mb-[4vh]">
-        {desc}
+      <div className="mx-auto mt-[6rem] mb-[10rem] w-min h-auto flex flex-col justify-center items-center px-[3vw]">
+        <div className="lg:w-[35rem] lg:h-[8rem] sm:w-[28rem] sm:h-[7rem] w-[15rem] h-[4rem] relative">
+          <Image className="" src="/ss.png" alt="slidescribe" fill />
+        </div>
+        <div className="sm:w-[30rem] w-[15rem]">
+          <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[2rem] mb-[0.7vh] text-[#000000d8]">
+            SlideScribe
+          </div>
+          <div className="text-[#000000c8] font-[300] font-quicksand sm:text-[1.1rem] text-[0.8rem] text-justify">
+            SlideScribe is a web app that aids students in their lecture
+            comprehension. The program utilizes Google&apos;s Vision AI as an OCR
+            Engine for transcribing text from uploaded images of lecture slides.
+            Users can have the text read out loud with synchronized
+            text-highlighting, and also have a summarized notes text file
+            generated using OpenAI&apos;s api.
+          </div>
+        </div>
       </div>
     </div>
   );

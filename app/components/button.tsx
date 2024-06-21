@@ -16,10 +16,10 @@ export default function Button({ text, active, href }: ButtonProps) {
 
   return (
     <div
-      className={`shadow-[#00000039] shadow-sm font-quicksand font-[500] flex items-center justify-center rounded-[1.6vw] md:rounded-[0.6vw] ml-[2vw] md:ml-[1vw] text-[4vw] md:text-[1.55vw] transition-all duration-[200ms] ${
+      className={`font-quicksand font-[400] flex items-center justify-center sm:ml-[2rem] ml-[0.9rem] sm:text-[1.6rem] text-[1.2rem] transition-all duration-[200ms] ${
         active
-          ? 'cursor-default bg-accent text-[#ffffffd0] w-[22vw] md:w-[9vw] h-[4.5vh] md:h-[6.5vh]'
-          : 'text-accent bg-[#ffffff2a] border-[#54576a12] border-2 hover:bg-[#c1c1c12a] hover:text-[#365971] hover:cursor-pointer w-[19.7vw] md:w-[8vw] h-[3.9vh] md:h-[6.15vh]'
+          ? 'cursor-default text-[#2080c5d9] scale-[110%] transition-transform duration-200'
+          : 'text-[#000000a1] hover:scale-[103%] hover:text-[#00000062] hover:cursor-pointer transition-all duration-200'
       }`}
       onClick={handleClick}>
       <div>{text}</div>
