@@ -5,20 +5,15 @@ phases:
     runtime-versions:
       nodejs: 21
     commands:
-      - echo Installing dependencies...
       - npm ci
 
   build:
     commands:
-      - echo Building the Next.js application...
       - npm run build
-      
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - npm run export
 
 artifacts:
-  base-directory: .next
+  base-directory: out
   files:
     - '**/*'
 
