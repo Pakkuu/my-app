@@ -10,10 +10,9 @@ phases:
   build:
     commands:
       - npm run build
-      - npm run export
 
 artifacts:
-  base-directory: out
+  base-directory: .next
   files:
     - '**/*'
 
