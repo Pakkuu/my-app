@@ -11,11 +11,10 @@ export default function AboutMe() {
           <div className="font-quicksand text-[#000000ac] font-[400] text-justify w-full mr-auto lg:text-[1.3rem] md:text-[1.1rem] sm:text-[1rem] text-[0.8rem] sm:leading-[3rem] leading-[2rem] pr-[1.5rem] z-10">
             I&apos;m a sophmore studying computer science at UTD. In my free
             time I love to workout, play video games, and watch anime (some of
-            my favorites are Bleach, FMAB, and Samurai Champloo). My interests
+            my favorites are Steins;Gate, FMAB, and Samurai Champloo). My interests
             within computer science lie in Cloud Services, RAG (Retrieval
-            Augmented Generation), AI, and web development, particularly in the
-            backend. I am skilled in C++, Java, Python, HTML/JS/CSS and have had
-            experience with React, NextJS, and AWS.
+            Augmented Generation), AI, and full-stack development. I am skilled in C++, Java, Python, HTML/JS/CSS and have
+            experience with React, Next, Express, and AWS.
           </div>
 
         </div>
