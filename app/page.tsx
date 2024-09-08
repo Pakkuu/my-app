@@ -14,7 +14,7 @@ export default function AboutMe() {
             my favorites are Steins;Gate, FMAB, and Samurai Champloo). My interests
             within computer science lie in Cloud Services, RAG (Retrieval
             Augmented Generation), AI, and full-stack development. I am skilled in C++, Java, Python, HTML/JS/CSS and have
-            experience with React, Next, Express, and AWS.
+            experience with React, Next, Express, and AWS!
           </div>
 
         </div>
