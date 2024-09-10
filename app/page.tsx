@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <>
       <div className="flex-col sm:mt-[6.0rem] lg:w-[53%] sm:w-[70%] w-[90%] mx-auto lg:pr-[7%] sm:p-0">
-        <div className="font-quicksand text-[#323232d5] font-[400] text-[1.8rem] mr-auto mb-[1rem]">
+        <div className="font-quicksand text-[#323232d5] font-[400] text-[1.8rem] mr-auto mb-[2rem]">
           Hi! My name is Ethan Varghese
         </div>
         <div className="flex relative">
