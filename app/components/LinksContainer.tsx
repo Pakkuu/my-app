@@ -18,7 +18,6 @@ export default function LinksContainer() {
             alt="GitHub"
             fill
             sizes="2vw"
-            unoptimized
           />
         </Link>
         <Link
@@ -33,7 +32,6 @@ export default function LinksContainer() {
             alt="LinkedIn"
             fill
             sizes="2vw"
-            unoptimized
           />
         </Link>
         <Link
@@ -48,7 +46,6 @@ export default function LinksContainer() {
             alt="Instagram"
             fill
             sizes="2vw"
-            unoptimized
           />
         </Link>
       </div>
