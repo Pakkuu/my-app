@@ -19,7 +19,7 @@ export default function Project() {
     <div>
       <div id="cyphera" className="mx-auto mt-[1.5vh] mb-[5rem] w-min h-auto flex flex-col justify-center items-center">
         <div className="lg:w-[57rem] lg:h-[30rem] sm:w-[35rem] sm:h-[20rem] w-[20rem] h-[10rem] relative">
-          <Image className="" src="/cyphera.png" alt="cyphera" fill unoptimized/>
+          <Image className="" src="/cyphera.png" alt="cyphera" fill />
         </div>
         <div className="sm:w-[30rem] w-[15rem]">
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[1.5vh] mb-[0.7vh] text-[#000000d8]">
@@ -33,7 +33,7 @@ export default function Project() {
       </div>
       <div id="sage" className="mx-auto mt-[1.5vh] mb-[1.5rem] w-min h-auto flex flex-col justify-center items-center px-[3vw]">
         <div className="lg:w-[44rem] lg:h-[30rem] sm:w-[34rem] sm:h-[23rem] w-[19rem] h-[13rem] relative">
-          <Image className="" src="/sage.png" alt="sage" fill unoptimized/>
+          <Image className="" src="/sage.png" alt="sage" fill />
         </div>
         <div className="sm:w-[30rem] w-[15rem]">
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[1.5vh] mb-[0.7vh] text-[#000000d8]">
@@ -51,7 +51,7 @@ export default function Project() {
       </div>
       <div id="slidescribe" className="mx-auto mt-[6rem] mb-[10rem] w-min h-auto flex flex-col justify-center items-center px-[3vw]">
         <div className="lg:w-[35rem] lg:h-[8rem] sm:w-[28rem] sm:h-[7rem] w-[15rem] h-[4rem] relative">
-          <Image className="" src="/ss.png" alt="slidescribe" fill unoptimized/>
+          <Image className="" src="/ss.png" alt="slidescribe" fill />
         </div>
         <div className="sm:w-[30rem] w-[15rem]">
           <div className="font-quicksand font-[400] sm:text-[1.6rem] mt-[2rem] mb-[0.7vh] text-[#000000d8]">
